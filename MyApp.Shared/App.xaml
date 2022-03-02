@@ -5,7 +5,19 @@
     xmlns:local="using:MyApp">
 	
 	<Application.Resources>
-		<XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-	</Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+
+                <!-- Register custom styles from the Presentation layer -->
+                <ResourceDictionary Source="ms-appx:///MyApp.Presentation/Styles/StylesRegistration.xaml"/>
+                <ResourceDictionary Source="ms-appx:///MyApp.Presentation/Converters/ConvertersRegistration.xaml"/>
+
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Other app resources here -->
+        </ResourceDictionary>
+    </Application.Resources>
 
 </Application>
