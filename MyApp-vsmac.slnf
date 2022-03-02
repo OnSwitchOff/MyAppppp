@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "MyApp.sln",
+    "projects": [
+		"MyApp.Shared\\MyApp.Shared.shproj",
+
+		"MyApp.Mobile\\MyApp.Mobile.csproj",
+
+		"MyApp.Wasm\\MyApp.Wasm.csproj",
+
+		"MyApp.Skia.Gtk\\MyApp.Skia.Gtk.csproj",
+    ]
+  }
+}
